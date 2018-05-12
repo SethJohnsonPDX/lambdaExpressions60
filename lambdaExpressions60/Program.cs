@@ -34,16 +34,15 @@ namespace lambdaExpressions60
             myEmployees.Add(employee10);
 
             //// 2. FOREACH ////
-            //int count = 0;
-
+            //List<Employee> sameName = new List<Employee>();
             //foreach (Employee employee in myEmployees)
             //{
             //    if (employee.firstName == "Joe")
             //    {
-            //        count++;
+            //        sameName.Add(employee);
+            //        Console.WriteLine("Last Names for Joe repeats are: {0}", employee.lastName);
             //    }
             //}
-            //Console.WriteLine(count);
             //Console.ReadLine();
 
             //// 3. USING LAMBDA ////
@@ -52,7 +51,7 @@ namespace lambdaExpressions60
 
 
             List<Employee> greaterThanFive = myEmployees.Where(y => y.Id > 5).ToList();
-            
+
             foreach (Employee employee in greaterThanFive)
             {
                 Console.WriteLine("Employee: {0} {1}, {2}", employee.firstName, employee.lastName, employee.Id);
